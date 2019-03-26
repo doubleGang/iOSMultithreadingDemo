@@ -23,17 +23,13 @@ static dispatch_semaphore_t _saleTicketLock; // 售票锁
 {
     [super viewDidLoad];
     
-    // GCD 信号量：dispatch_semaphore
-//    [self semaphoreSync]; // 线程同步
-//    [self initTicketSystem]; // 线程安全(模拟售票)
-    
     // GCD 队列组：dispatch_group
 //    [self groupNotify]; // 队列组 dispatch_group_notify
 //    [self groupWait]; // 队列组 dispatch_group_wait
 //    [self groupEnterAndLeave]; // dispatch_group_enter、dispatch_group_leave
     
     // GCD 栅栏方法：dispatch_barrier_async
-//    [self barrier];
+    [self barrier];
     
     // GCD 任务和队列
 //    [self syncConcurrent]; // 同步执行 + 并发队列
@@ -303,6 +299,10 @@ static dispatch_semaphore_t _saleTicketLock; // 售票锁
 - (void)barrier
 {
     dispatch_queue_t queue = dispatch_queue_create("net.bujige.testQueue", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+//    dispatch_queue_create("net.bujige.testQueue", DISPATCH_QUEUE_CONCURRENT);
+    
+    
     
     dispatch_async(queue, ^{
         // 追加任务1
@@ -351,8 +351,6 @@ static dispatch_semaphore_t _saleTicketLock; // 售票锁
  
  串行队列（Serial Dispatch Queue）：每次只有一个任务被执行。让任务一个接着一个地执行。（只开启一个线程，一个任务执行完毕后，再执行下一个任务）
  并发队列（Concurrent Dispatch Queue）：可以让多个任务并发（同时）执行。（可以开启多个线程，并且同时执行任务）
- 
- 
  */
 
 #pragma mark - 4.1 同步执行 + 并发队列

@@ -12,7 +12,7 @@
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (nonatomic, copy) NSArray <NSString *>*titlesArray;
+@property (nonatomic, copy) NSArray <NSString *>*titlesArray; // 数据源数组
 
 @end
 

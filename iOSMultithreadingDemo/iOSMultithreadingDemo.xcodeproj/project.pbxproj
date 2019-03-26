@@ -54,6 +54,9 @@
 		D913A5B3224873BF00FE3044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D913A5C12248783D00FE3044 /* GCDController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDController.h; sourceTree = "<group>"; };
 		D913A5C22248783D00FE3044 /* GCDController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDController.m; sourceTree = "<group>"; };
+		D98F810A2249C00100E5D8D9 /* iOSMultithreadingDemo copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "iOSMultithreadingDemo copy-Info.plist"; path = "/Users/yangyongjie/Desktop/Demos/iOSMultithreadingDemo/iOSMultithreadingDemo/iOSMultithreadingDemo copy-Info.plist"; sourceTree = "<absolute>"; };
+		D98F810B2249C01100E5D8D9 /* iOSMultithreadingDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOSMultithreadingDemo.entitlements; sourceTree = "<group>"; };
+		D98F811B2249C04F00E5D8D9 /* iOSMultithreadingDemo copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "iOSMultithreadingDemo copy2-Info.plist"; path = "/Users/yangyongjie/Desktop/Demos/iOSMultithreadingDemo/iOSMultithreadingDemo/iOSMultithreadingDemo copy2-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 				D913A5A5224873BF00FE3044 /* iOSMultithreadingDemoTests */,
 				D913A5B0224873BF00FE3044 /* iOSMultithreadingDemoUITests */,
 				D913A58B224873BD00FE3044 /* Products */,
+				D98F810A2249C00100E5D8D9 /* iOSMultithreadingDemo copy-Info.plist */,
+				D98F811B2249C04F00E5D8D9 /* iOSMultithreadingDemo copy2-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +109,7 @@
 		D913A58C224873BD00FE3044 /* iOSMultithreadingDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D98F810B2249C01100E5D8D9 /* iOSMultithreadingDemo.entitlements */,
 				D913A58D224873BE00FE3044 /* AppDelegate.h */,
 				D913A58E224873BE00FE3044 /* AppDelegate.m */,
 				D913A5BF224877F800FE3044 /* Multithreading */,
@@ -220,6 +226,11 @@
 				TargetAttributes = {
 					D913A589224873BD00FE3044 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					D913A5A1224873BF00FE3044 = {
 						CreatedOnToolsVersion = 10.1;
@@ -392,7 +403,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -445,7 +456,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
