@@ -11,6 +11,7 @@
 @interface GCDController ()
 
 @property (nonatomic, assign) int ticketSurplusCount; // 剩余票数
+
 @end
 
 static dispatch_semaphore_t _saleTicketLock; // 售票锁
@@ -22,11 +23,6 @@ static dispatch_semaphore_t _saleTicketLock; // 售票锁
 {
     [super viewDidLoad];
     
-    
-//    dispatch_sync(dispatch_get_main_queue(), ^{
-//        NSLog(@"2");
-//    });
-
     // GCD 信号量：dispatch_semaphore
 //    [self semaphoreSync]; // 线程同步
 //    [self initTicketSystem]; // 线程安全(模拟售票)
