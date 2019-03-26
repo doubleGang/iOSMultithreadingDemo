@@ -23,9 +23,9 @@ static dispatch_semaphore_t _saleTicketLock; // 售票锁
     [super viewDidLoad];
     
     
-    dispatch_sync(dispatch_get_main_queue(), ^{
-        NSLog(@"2");
-    });
+//    dispatch_sync(dispatch_get_main_queue(), ^{
+//        NSLog(@"2");
+//    });
 
     // GCD 信号量：dispatch_semaphore
 //    [self semaphoreSync]; // 线程同步
