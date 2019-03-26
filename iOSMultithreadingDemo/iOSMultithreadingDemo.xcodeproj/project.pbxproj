@@ -15,6 +15,7 @@
 		D913A59D224873BE00FE3044 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D913A59C224873BE00FE3044 /* main.m */; };
 		D913A5A7224873BF00FE3044 /* iOSMultithreadingDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D913A5A6224873BF00FE3044 /* iOSMultithreadingDemoTests.m */; };
 		D913A5B2224873BF00FE3044 /* iOSMultithreadingDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D913A5B1224873BF00FE3044 /* iOSMultithreadingDemoUITests.m */; };
+		D913A5C32248783D00FE3044 /* GCDController.m in Sources */ = {isa = PBXBuildFile; fileRef = D913A5C22248783D00FE3044 /* GCDController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		D913A5AD224873BF00FE3044 /* iOSMultithreadingDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSMultithreadingDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D913A5B1224873BF00FE3044 /* iOSMultithreadingDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSMultithreadingDemoUITests.m; sourceTree = "<group>"; };
 		D913A5B3224873BF00FE3044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D913A5C12248783D00FE3044 /* GCDController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDController.h; sourceTree = "<group>"; };
+		D913A5C22248783D00FE3044 /* GCDController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +106,7 @@
 			children = (
 				D913A58D224873BE00FE3044 /* AppDelegate.h */,
 				D913A58E224873BE00FE3044 /* AppDelegate.m */,
-				D913A590224873BE00FE3044 /* ViewController.h */,
-				D913A591224873BE00FE3044 /* ViewController.m */,
+				D913A5BF224877F800FE3044 /* Multithreading */,
 				D913A593224873BE00FE3044 /* Main.storyboard */,
 				D913A596224873BE00FE3044 /* Assets.xcassets */,
 				D913A598224873BE00FE3044 /* LaunchScreen.storyboard */,
@@ -130,6 +132,25 @@
 				D913A5B3224873BF00FE3044 /* Info.plist */,
 			);
 			path = iOSMultithreadingDemoUITests;
+			sourceTree = "<group>";
+		};
+		D913A5BF224877F800FE3044 /* Multithreading */ = {
+			isa = PBXGroup;
+			children = (
+				D913A590224873BE00FE3044 /* ViewController.h */,
+				D913A591224873BE00FE3044 /* ViewController.m */,
+				D913A5C0224877F800FE3044 /* Controller */,
+			);
+			path = Multithreading;
+			sourceTree = "<group>";
+		};
+		D913A5C0224877F800FE3044 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D913A5C12248783D00FE3044 /* GCDController.h */,
+				D913A5C22248783D00FE3044 /* GCDController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D913A5C32248783D00FE3044 /* GCDController.m in Sources */,
 				D913A592224873BE00FE3044 /* ViewController.m in Sources */,
 				D913A59D224873BE00FE3044 /* main.m in Sources */,
 				D913A58F224873BE00FE3044 /* AppDelegate.m in Sources */,
